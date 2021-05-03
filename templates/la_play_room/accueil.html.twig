@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ parent() }}
+    {{ include('partials/_audiola_play_room.html.twig') }}
+
+    <div class="container d-flex">
+        <div class="row mt-4">
+            {{ include('partials/_themes.html.twig') }}
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block title %}
+    {{ titrePage|capitalize }}
+{% endblock %}
